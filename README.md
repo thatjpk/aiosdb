@@ -59,7 +59,7 @@ adding them.) The actions tested so far are:
     - BatchPutAttributes
 - Requires botocore just to get credentials from your profile.
 - The request method's interface kind of sucks. It accepts kwargs that are
-used to directly build the request parameters (as seen here)[http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_ParametersDescription.html].
+used to directly build the request parameters [as seen here](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_ParametersDescription.html).
 The problem being: the natural thing to write in python would be `Attributes=[foo, bar, ...]`,
 but you have to drop the plural so it'll be flattened to `Attribute.1`,
 `Attribute.2`, etc.  boto and friends do this for you, but this doesn't.
